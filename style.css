@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --primary-nutmeg: hsl(14, 45%, 36%);
+    --primary-dark-raspberry: hsl(332, 51%, 32%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-rose-white: hsl(330, 100%, 98%);
+    --neutral-eggshel: hsl(30, 54%, 90%);
+    --neutral-light-grey: hsl(30, 18%, 87%);
+    --neutral-wenge-brown: hsl(30, 10%, 34%);
+    --neutral-dark-charcoal: hsl(24, 5%, 18%);
+    --neutral-link: hsl(228, 45%, 44%);
+
+    --font-default: 'Outfit', sans-serif;
+    --font-secondary: 'Young Serif', sans-serif;
+}
+
+body {
+    background-color: var(--neutral-eggshel);
+    color: var(--neutral-wenge-brown);
+    display: grid;
+    font-family: var(--font-default);
+    justify-content: center;
+    place-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.font-title {
+    color: var(--primary-nutmeg);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+
+/*container*/
+.container {
+    background-color: var(--neutral-white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1440px ;
+    padding: 40px;
+}
+
+/*card-1*/
+.card-1 {
+    max-width: 600px;
+}
+
+.card-1 img {
+    border-radius: 15px;
+}
+
+/*card-2*/
+.card-2 {
+    display: grid;
+    gap: 20px;
+}
+
+.card-2 h1 {
+    color: var(--neutral-dark-charcoal);    
+}
+
+.card-2 p {    
+    max-width: 60ch;
+}
+
+/*preparation*/
+.preparation {
+    background-color: var(--neutral-rose-white);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.preparation h3 {
+    color: var(--primary-dark-raspberry);
+    margin-bottom: 10px;
+}
+
+.preparation li {
+    margin-bottom: 10px;
+}
+
+.preparation li span {
+    font-weight: 600;
+}
+
+.preparation li::marker {
+    color: var(--primary-dark-raspberry);
+}
+
+
+/*card-3*/
+.card-3 {
+
+}
+/*Footer*/
+.attribution {
+    font-size: .6875rem; 
+    margin: 20px 0 20px 0;
+    text-align: center; 
+}
+
+.attribution a {
+    color: var(--neutral-white); 
+}
+
+.attribution a:hover  {
+    color: var(--primary-soft-magenta);
+}
