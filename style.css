@@ -38,10 +38,26 @@ ul, ol {
     padding-left: 20px;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: var(--primary-dark-raspberry);    
+}
+
 .font-title {
     color: var(--primary-nutmeg);
     font-family: var(--font-secondary);
     font-weight: 500;
+}
+
+span {
+    font-weight: 600;
+}
+
+.border-1 {
+    border-bottom: solid 1px var(--neutral-light-grey);
 }
 
 /*container*/
@@ -57,7 +73,7 @@ ul, ol {
 
 /*card-1*/
 .card-1 {
-    max-width: 600px;
+    max-width: 629px;
 }
 
 .card-1 img {
@@ -90,23 +106,34 @@ ul, ol {
     margin-bottom: 10px;
 }
 
-.preparation li {
-    margin-bottom: 10px;
-}
-
-.preparation li span {
-    font-weight: 600;
-}
-
-.preparation li::marker {
-    color: var(--primary-dark-raspberry);
-}
-
-
 /*card-3*/
 .card-3 {
-
+    padding-bottom: 20px;    
 }
+
+/*card-4*/
+.card-4 {
+    padding-bottom: 20px;
+}
+
+.card-4 li {
+    max-width: 57ch;    
+}
+
+/*card-5*/
+.card-5 h2 {
+    margin-bottom: 10px;
+}
+.card-5-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.card-5-data p {
+    padding: 10px 0px 10px 20px;
+}
+
 /*Footer*/
 .attribution {
     font-size: .6875rem; 
